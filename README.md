@@ -1,19 +1,17 @@
-# Angular2 Tutorial Code
+# Angular2 Tutorial Code von AngularJS.de
 
-## Try
-
-### Installation
+## Installation
 
 Clone/fork this repo and:
 
     npm install -g gulp-cli
     npm install
 
-### Projekt starten
+## Projekt starten
 
     npm start
 
-### Projekt öffnen
+## Projekt öffnen
 
 Ihr könnt das Projekt mit einem HttpServer euer wahl öffnen z.B. `http-server`
 
