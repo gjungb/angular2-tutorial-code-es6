@@ -1,0 +1,35 @@
+{
+  "name": "babel-angular2-app",
+  "version": "0.0.1",
+  "description": "A skeleton Angular 2 app built with babel.",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shuhei Kagawa <shuhei.kagawa@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "5.8.23",
+    "babel-eslint": "^4.1.1",
+    "babel-plugin-angular2-annotations": "^2.0.0",
+    "babel-plugin-type-assertion": "^0.3.0",
+    "babelify": "^6.3.0",
+    "babylon": "5.8.23",
+    "browserify": "^11.0.1",
+    "del": "^2.0.0",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.3.1"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-alpha.36",
+    "es6-promise": "^3.0.2",
+    "reflect-metadata": "^0.1.0",
+    "rtts_assert": "2.0.0-alpha.36",
+    "zone.js": "^0.5.4"
+  }
+}

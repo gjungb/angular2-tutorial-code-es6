@@ -1,0 +1,8 @@
+{
+  "name": "About-Component",
+  "version": "0.0.1",
+  "main": "about.component.js",
+  "dependencies": {
+    "angular2": "2.0.0-alpha.36"
+  }
+}
