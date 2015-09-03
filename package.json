@@ -1,5 +1,5 @@
 {
-  "name": "babel-angular2-app",
+  "name": "angularjs-de-angular2-tutorial",
   "version": "0.0.1",
   "description": "A skeleton Angular 2 app built with babel.",
   "scripts": {
@@ -8,8 +8,7 @@
     "watch": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shuhei Kagawa <shuhei.kagawa@gmail.com>",
-  "license": "ISC",
+  "author": "Robin Böhm <robin.boehm@angularjs.de>",
   "devDependencies": {
     "babel-core": "5.8.23",
     "babel-eslint": "^4.1.1",
