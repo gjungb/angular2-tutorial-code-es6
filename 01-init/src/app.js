@@ -3,7 +3,6 @@ import 'reflect-metadata';
 import 'babel-core/polyfill';
 import { assert } from 'rtts_assert/rtts_assert';
 
-import { bind} from 'angular2/di';
 import { Component, View, bootstrap} from 'angular2/angular2';
 
 @Component({

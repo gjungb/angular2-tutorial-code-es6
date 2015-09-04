@@ -1,8 +1,0 @@
-{
-  "name": "Cart-Module",
-  "version": "0.0.1",
-  "main": "cart.module.js",
-  "dependencies": {
-    "angular2": "2.0.0-alpha.36"
-  }
-}

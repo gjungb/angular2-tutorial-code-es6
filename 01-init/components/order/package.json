@@ -1,8 +1,0 @@
-{
-  "name": "Order-Component",
-  "version": "0.0.1",
-  "main": "order.component.js",
-  "dependencies": {
-    "angular2": "2.0.0-alpha.36"
-  }
-}
