@@ -18,10 +18,24 @@ import {FORM_DIRECTIVES} from 'angular2/forms';
     <input type="text" [(ng-model)]="search">
     <p *ng-if="search">Du suchst gerade nach: {{search}}</p>
   </form>
+
+  <table class="table">
+     <tr *ng-for="#article of ['Pizza Margherita', 'Pizza Tonno']">
+       <td>{{article}}</td>
+     </tr>
+   </table>
+
+  <table class="table">
+     <tr *ng-for="#article of articles">
+       <td>{{article}}</td>
+     </tr>
+   </table>
   `
 }) class PizzaService {
   constructor(){
     this.search = ""
+
+    this.articles = ['Pizza Margherita', 'Pizza Tonno'];
   }
 }
 
