@@ -1,7 +1,7 @@
 {
   "name": "angularjs-de-angular2-tutorial",
   "version": "0.0.1",
-  "description": "A skeleton Angular 2 app built with babel.",
+  "description": "A Angular 2 tutorial app by AngularJS.DE",
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
@@ -20,6 +20,7 @@
     "del": "^2.0.0",
     "gulp": "^3.9.0",
     "gulp-util": "^3.0.6",
+    "require-dir": "^0.3.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.3.1"
