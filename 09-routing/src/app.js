@@ -18,7 +18,7 @@ import AboutComponent from 'about';
   directives: [ROUTER_DIRECTIVES],
   template: `
     <p class="well">
-      <a [router-link]="['/hello']">Start</a>
+      <a [router-link]="['/order']">Start</a>
       |
       <a [router-link]="['/about']">Über</a>
     </p>
@@ -26,7 +26,7 @@ import AboutComponent from 'about';
   `
 })
 @RouteConfig([
-  { path: '/hello', component: OrderComponent, as: 'hello' },
+  { path: '/order', component: OrderComponent, as: 'order' },
   { path: '/about', component: AboutComponent, as: 'about' }
 ])
 class HelloApp {
