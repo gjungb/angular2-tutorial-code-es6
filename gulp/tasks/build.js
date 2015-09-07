@@ -5,17 +5,21 @@ import buffer from 'vinyl-buffer';
 import browserify from 'browserify';
 import babelify from 'babelify';
 
-import {dest,dirs} from '../config'
+import {ghPagesDest,dirs} from '../config'
 
 gulp.task('build', ['copy'], (cb) => {
     for (let dir of dirs) {
-      console.log('build: ' + dir)
       let b = browserify({
         paths   : ['node_modules', dir + '/components'],
         entries : dir + '/src/app.js'
       })
         .transform(babelify);
-      bundle(b, dest + dir + '/');
+      bundle(b, ghPagesDest + dir + '/');
+    }
+
+    for (let dir of dirs) {
+      gulp.src(dir + '/src/index.html')
+        .pipe(gulp.dest(ghPagesDest + dir + '/'))
     }
     cb()
   }
@@ -23,7 +27,6 @@ gulp.task('build', ['copy'], (cb) => {
 
 
 function bundle (b, dest) {
-  console.log(dest);
   return b.bundle()
     .on('error', (e) => {
       const pe = new PluginError('browserify', e);

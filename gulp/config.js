@@ -1,4 +1,10 @@
-let dest = 'gh-pages/'
+let bundleConfig = {
+  paths   : ['node_modules', 'components'],
+  entries : 'src/app.js'
+};
+
+let dest = '../public/'
+let ghPagesDest = 'gh-pages/'
 
 let dirs = [
   '01-init',
@@ -13,6 +19,8 @@ let dirs = [
 ]
 
 export {
+  ghPagesDest,
+  bundleConfig,
   dest,
   dirs
 }
