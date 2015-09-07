@@ -1,28 +1,29 @@
 import gulp from 'gulp';
 import gutil, { PluginError } from 'gulp-util';
-
 import source from 'vinyl-source-stream';
 import buffer from 'vinyl-buffer';
-
 import browserify from 'browserify';
-import watchify from 'watchify';
 import babelify from 'babelify';
 
+import {dest,dirs} from '../config'
 
-import {bundleConfig, dest} from '../config'
+gulp.task('build', ['copy'], (cb) => {
+    for (let dir of dirs) {
+      console.log('build: ' + dir)
+      let b = browserify({
+        paths   : ['node_modules', dir + '/components'],
+        entries : dir + '/src/app.js'
+      })
+        .transform(babelify);
+      bundle(b, dest + dir + '/');
+    }
+    cb()
+  }
+)
 
 
-gulp.task('watch', () => {
-  const b = browserify(bundleConfig, watchify.args)
-    .transform(babelify);
-  const w = watchify(b)
-    .on('update', () => bundle(w))
-    .on('log', gutil.log);
-  return bundle(w)
-});
-
-
-function bundle (b) {
+function bundle (b, dest) {
+  console.log(dest);
   return b.bundle()
     .on('error', (e) => {
       const pe = new PluginError('browserify', e);
@@ -31,4 +32,5 @@ function bundle (b) {
     .pipe(source('app.js'))
     .pipe(buffer())
     .pipe(gulp.dest(dest));
+
 }
