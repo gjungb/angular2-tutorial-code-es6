@@ -287,10 +287,10 @@ var HelloApp = (function () {
   }
 
   var _HelloApp = HelloApp;
-  HelloApp = (0, _angular2Router.RouteConfig)([{ path: '/hello', component: _order2['default'], as: 'hello' }, { path: '/about', component: _about2['default'], as: 'about' }])(HelloApp) || HelloApp;
+  HelloApp = (0, _angular2Router.RouteConfig)([{ path: '/order', component: _order2['default'], as: 'order' }, { path: '/about', component: _about2['default'], as: 'about' }])(HelloApp) || HelloApp;
   HelloApp = (0, _angular2Angular2.View)({
     directives: [_angular2Router.ROUTER_DIRECTIVES],
-    template: '\n    <p class="well">\n      <a [router-link]="[\'/hello\']">Start</a>\n      |\n      <a [router-link]="[\'/about\']">Über</a>\n    </p>\n    <router-outlet></router-outlet>\n  '
+    template: '\n    <p class="well">\n      <a [router-link]="[\'/order\']">Start</a>\n      |\n      <a [router-link]="[\'/about\']">Über</a>\n    </p>\n    <router-outlet></router-outlet>\n  '
   })(HelloApp) || HelloApp;
   HelloApp = (0, _angular2Angular2.Component)({
     selector: 'hello-app'
