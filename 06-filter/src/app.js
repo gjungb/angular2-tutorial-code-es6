@@ -28,7 +28,7 @@ import {FORM_DIRECTIVES} from 'angular2/forms'
   `
 }) class PizzaService {
   constructor () {
-    this.search = ""
+    this.search = ''
     this.articles = ['Pizza Margherita', 'Pizza Tonno']
     }
 
